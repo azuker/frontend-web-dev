@@ -6,22 +6,22 @@
     ns.getProducts = function(category, callback) {
         const products = [
             {
-                Title: `${category} 1`,
-                Description: 'sadasd asdasda asdadsa sadsadasdsdas sadsadasdas asdsadasda sadasdadasdsa',
-                Category: category,
-                Owner: {Id: '1'},
-                City: {Name: 'Tel Aviv'},
-                Media: [{Url: ''}, {Url: ''}],
-                PrimaryImage: 'http://shfcs.org/en/wp-content/uploads/2015/11/MedRes_Product-presentation-2-800x954.jpg',
+                title: `${category} 1`,
+                description: 'sadasd asdasda asdadsa sadsadasdsdas sadsadasdas asdsadasda sadasdadasdsa',
+                category: category,
+                owner: {Id: '1'},
+                city: {Name: 'Tel Aviv'},
+                media: [{Url: ''}, {Url: ''}],
+                primaryImage: 'http://shfcs.org/en/wp-content/uploads/2015/11/MedRes_Product-presentation-2-800x954.jpg',
             },
             {
-                Title: `${category} 2`,
-                Description: 'sadasd asdasda asdadsa sadsadasdsdas sadsadasdas asdsadasda sadasdadasdsa',
-                Category: category,
-                Owner: {Id: '1'},
-                City: {Name: 'Tel Aviv'},
-                Media: [{Url: ''}, {Url: ''}],
-                PrimaryImage: 'http://shfcs.org/en/wp-content/uploads/2015/11/MedRes_Product-presentation-2-800x954.jpg',
+                title: `${category} 2`,
+                description: 'sadasd asdasda asdadsa sadsadasdsdas sadsadasdas asdsadasda sadasdadasdsa',
+                category: category,
+                owner: {Id: '1'},
+                city: {Name: 'Tel Aviv'},
+                media: [{Url: ''}, {Url: ''}],
+                primaryImage: 'http://shfcs.org/en/wp-content/uploads/2015/11/MedRes_Product-presentation-2-800x954.jpg',
             }
         ];
         setTimeout(() => callback(products), 1000);

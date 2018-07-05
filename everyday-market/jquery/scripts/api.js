@@ -4,18 +4,29 @@
   const ns = window.api = window.api || {};
 
   // EDIT the URL with the the address of your REST API
-  const baseUrl = 'http://localhost/api';
+  const baseUrl = 'http://localhost:51316/api/';
 
-  function getApiAction(action, parameters = null) {
-    const p = !parameters ? null : `?${Object.keys(parameters).map(k => `${k}=${parameters[k]}`).join('&')}`;
+  function getApiAction(action, ...parameters) {
+    const p = (!parameters || parameters.length === 0) ? '' : `/${Object.values(parameters).join('/')}`;
     return `${baseUrl}/${action}${p}`;
   }
 
+  function visitProducts(products, callback) {
+    products.forEach(p => {
+      if (p.media && p.media.length > 0) {
+        p.primaryImage = p.media[0].url;
+      }
+    });
+
+    if (callback) callback(products);
+  }
+
   ns.getProducts = function (category, callback) {
-    return $.getJSON(getApiAction('products', { category }), callback);
+    return $.getJSON(getApiAction('products/searchcategory', category),
+      data => visitProducts(data, callback));
   }
 
   ns.getCategories = function (callback) {
-    return $.getJSON(getApiAction('categories'), callback);
+    return $.getJSON(getApiAction('products/categories'), callback);
   }
 })(window);

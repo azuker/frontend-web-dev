@@ -1,0 +1,8 @@
+<app-category-menu
+  [categories]="categories"
+  (categoryChanged)="onCategoryChanged($event)"
+></app-category-menu>
+
+<app-product-list [products]="products"></app-product-list>
+
+<app-busy *ngIf="isBusy"></app-busy>

@@ -23,12 +23,12 @@
 }
 
 .item-card-content-container-img {
-  display: block;
-  max-width: 80px;
-  max-height: 80px;
-  width: auto;
-  height: auto;
-  text-align: center;
+    display: block;
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    text-align: center;
 }
 
 .item-card-content-container-title {

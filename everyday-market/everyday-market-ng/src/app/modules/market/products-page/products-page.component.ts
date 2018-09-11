@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Category, Product } from '../../../model';
 import { CategoriesService } from '../../core/services/categories.service';
 import { ProductsService } from '../../core/services/products.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products-page',
@@ -17,6 +18,7 @@ export class ProductsPageComponent implements OnInit {
   constructor(
     private readonly categoriesService: CategoriesService,
     private readonly productsService: ProductsService,
+    private readonly route: ActivatedRoute,
   ) { }
 
   async ngOnInit() {

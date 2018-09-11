@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CoreModule } from '../core.module';
-import { Product } from '../../../model';
+import { Product, NewProduct } from '../../../model';
 import { environment } from '../../../../environments/environment';
 
 @Injectable({
@@ -16,5 +16,19 @@ export class ProductsService {
       .get(`${this.apiUri}products/searchcategory/${categoryName}`)
       .toPromise()
       .then(result => result as Product[]);
+  }
+
+  loadProduct(id: number) {
+    return this.http
+      .get(`${this.apiUri}products/${id}`)
+      .toPromise()
+      .then(result => result as Product);
+  }
+
+  addProduct(product: NewProduct) {
+    return this.http
+      .post(`${this.apiUri}products/slim`, product)
+      .toPromise()
+      .then(result => result as Product);
   }
 }

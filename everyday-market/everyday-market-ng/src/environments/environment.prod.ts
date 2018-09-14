@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  marketApiBaseUri: 'http://localhost:51316/api/',
+  marketApiBaseUri: 'https://giventakeapi.azurewebsites.net/api/',
 };

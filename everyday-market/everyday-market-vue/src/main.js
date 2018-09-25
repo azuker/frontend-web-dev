@@ -15,6 +15,9 @@ new Vue({
 
 // JSX, decorators: vue-class-component / vue-property-decorator
 
+// data binding - mention modifiers
+// reactive - mention computed props and watches
+
 // http and plugins - vue-resource / https://vuejs.org/v2/guide/plugins.html / https://vuejs.org/v2/api/#provide-inject
 // https://stackoverflow.com/questions/38498427/vue-js-define-a-service
 // https://www.thepolyglotdeveloper.com/2017/10/consume-api-data-http-vuejs-web-application/
@@ -25,3 +28,6 @@ new Vue({
 
 // props (default, validation, etc) - https://vuejs.org/v2/guide/components-props.html
 
+// functional components -
+// https://itnext.io/whats-the-deal-with-functional-components-in-vue-js-513a31eb72b0
+// https://vuejs.org/v2/guide/render-function.html#Functional-Components

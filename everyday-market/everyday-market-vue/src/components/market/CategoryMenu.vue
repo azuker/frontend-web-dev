@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import CategoryMenuItem from './CategoryMenuItem.vue';
+import CategoryMenuItem from './CategoryMenuItemFunctional.vue';
 
 export default {
   name: 'CategoryMenu',

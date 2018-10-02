@@ -9,6 +9,8 @@ new Vue({
   render: h => h(App)
 }).$mount('#app');
 
+// vue config (dev/prod) - https://cli.vuejs.org/guide/mode-and-env.html
+
 // https://vuejs.org/v2/guide/components-registration.html
 
 // can split files using src tag

@@ -36,33 +36,3 @@
         setTimeout(() => callback(data), 1000);
     }
 })(window);
-
-/*
-
-public int ProductId { get; set; }
-        public OwnerDTO Owner { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public string Subcategory { get; set; }
-        public CityDTO City { get; set; }
-        public MediaDTO[] Media { get; set; }
-
-
-public class CityDTO
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
-    public class OwnerDTO
-    {
-        public string Id { get; set; }
-    }
-    namespace GiveNTake.Model.DTO
-{
-    public class MediaDTO
-    {
-        public string Url { get; set; }
-    }
-}
-*/

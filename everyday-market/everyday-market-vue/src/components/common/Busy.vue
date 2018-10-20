@@ -1,6 +1,6 @@
 <template functional>
-  <div className="loader-container">
-    <div className="loader"></div>
+  <div class="loader-container">
+    <div class="loader"></div>
   </div>
 </template>
 

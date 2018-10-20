@@ -4,7 +4,7 @@
   const ns = window.api = window.api || {};
 
   // EDIT the URL with the the address of your REST API
-  const baseUrl = 'http://localhost:51316/api/';
+  const baseUrl = 'http://localhost:55564/api/';
 
   function getApiAction(action, ...parameters) {
     const p = (!parameters || parameters.length === 0) ? '' : `/${Object.values(parameters).join('/')}`;
